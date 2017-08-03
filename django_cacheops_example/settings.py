@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 CACHEOPS_REDIS = "redis://localhost:6379/1"
 CACHEOPS_DEGRADE_ON_FAILURE = False
 CACHEOPS = {
-    '*.*': {'timeout': 60*60},
+    'demo.*': {'timeout': 60*60, 'ops': 'all'},
 }
 
 MIDDLEWARE = [
